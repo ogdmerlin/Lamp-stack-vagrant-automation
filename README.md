@@ -33,12 +33,8 @@ Validate PHP functionality with Apache.
 
 Bash Script:
 A bash script encapsulating the entire deployment process adhering to the specifications mentioned above.
+
 Documentation:
-
-This README file.
-How to Use
-Prerequisites:
-
 Ensure you have Vagrant and VirtualBox installed on your system.
 Getting Started:
 
