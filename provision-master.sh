@@ -6,7 +6,7 @@ usermod -aG sudo altschool
 
 # Enable SSH key-based authentication
 mkdir -p /home/altschool/.ssh
-echo "********" >> /home/altschool/.ssh/authorized_keys
+echo "*******" >> /home/altschool/.ssh/authorized_keys
 chmod 700 /home/altschool/.ssh
 chmod 600 /home/altschool/.ssh/authorized_keys
 chown -R altschool:altschool /home/altschool/.ssh
