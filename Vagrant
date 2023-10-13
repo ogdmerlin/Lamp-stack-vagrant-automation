@@ -1,0 +1,32 @@
+Vagrant.configure(2) do |config|
+
+   # create the master node
+  config.vm.define "master" do |master|
+    master.vm.box = "ubuntu/focal64"
+    master.vm.hostname = "Master"
+    master.vm.network "private_network", ip: "192.168.33.11"
+    master.vm.boot_timeout = 600
+    master.vm.provision "shell", path: "provision-master.sh"
+  end
+
+    
+  # create the slave node
+  config.vm.define "slave" do |slave|
+    slave.vm.box = "ubuntu/focal64"
+    slave.vm.hostname = "Slave"
+    slave.vm.network "private_network", ip: "192.168.33.10"
+    slave.vm.boot_timeout = 600
+    slave.vm.provision "shell", path: "provision-slave.sh"
+  end
+  
+  
+  # create the loadbalancer
+  config.vm.define "loadbal" do |loadbal|
+    loadba.vm.box = "ubuntu/focal64"
+    loadba.vm.hostname = "loadbal"
+    loadba.vm.network "private_network", ip: "192.168.33.9"
+    loadba.vm.boot_timeout = 600
+    loadba.vm.provision "shell", path: "loadbalancer.sh"
+  end
+
+end
