@@ -1,7 +1,5 @@
 #!/bin/bash
 
-
-
 # Update package index
 echo "Updating package index..."
 sudo apt update -y
