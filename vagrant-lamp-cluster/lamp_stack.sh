@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#displat the linux type in use
+#display the linux type in use
 lsb_release -a
 
 # Update package index
