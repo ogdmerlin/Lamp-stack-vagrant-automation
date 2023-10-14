@@ -9,10 +9,10 @@ echo "Installing Nginx..."
 sudo apt install -y nginx
 
 # Define the master and slave node IP addresses
-master_ip="192.168.56.3"
-slave_ip="192.168.56.4"
+master_ip="192.168.33.11"
+slave_ip="192.168.33.10"
 # Define the domain name or IP address where you want to access the load balancer
-domain="192.168.56.5"
+domain="192.168.33.5"
 
 # Create an Nginx configuration file for load balancing
 config_file="/etc/nginx/sites-available/load-balancer"
